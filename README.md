@@ -42,10 +42,11 @@ uv add ipykernel pandas pypdf2 openpyxl python-docx
 ### 2. Configure Keywords
 The tool is pre-configured with a comprehensive list of compliance-related keywords:
 ```python
-keywords = ['Gender', 'Transgender','transmen', 'transwomen' , 'LGBTQ', 'LGBT', ' DEI ', 'Diversity', 'Equity', 'Inclusion', 'gender',' GBV', 'trans-gender', 'trans-women', 'trans-men', 'disparity', 'pregnant people',
-            'Gender', 'DEI', 'Diversity', 'Inclusion', 'disparity', 'equity', 'identity', 'inclusivity', 'binary', 'non-binary', 'prejudice',
-            'pronouns', 'race', 'stereotype', 'tgw', 'transgender', 'tg', 'transgender women', 'trans', 'transgender', 'protecting women', 'key pops', 'key populations', 
-            'MAT', 'hormone', 'gbv', 'dreams', 'abortion', 'fsw', 'female sex worker', 'food']
+keywords = ['gender', 'transgender', 'transmen', 'transwomen', 'lgbtq', 'lgbt', 'dei', 'diversity', 'equity', 'inclusion', 
+            'gbv', 'trans-gender', 'trans-women', 'trans-men', 'disparity', 'pregnant people', 'identity', 'inclusivity', 
+            'binary', 'non-binary', 'prejudice', 'pronouns', 'race', 'stereotype', 'tgw', 'tg', 'transgender women', 
+            'trans', 'protecting women', 'key pops', 'key populations', 'mat', 'hormone', 'dreams', 'abortion', 
+            'fsw', 'female sex worker', 'food']
 ```
 You can modify this list in `KeyWordSearch.ipynb` to add or remove keywords as needed for your specific compliance requirements.
 
