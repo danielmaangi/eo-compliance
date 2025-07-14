@@ -4,7 +4,7 @@ A Python-based document analysis tool for searching and extracting keyword-conta
 
 ## Overview
 
-This tool helps organizations perform compliance checks by searching for specific keywords (like "Gender", "DEI", "Diversity", "Inclusion") across multiple document types and generating detailed reports with exact sentence matches and their locations.
+This tool helps organizations perform compliance checks by searching for specific keywords related to gender, diversity, equity, inclusion, and key populations across multiple document types and generating detailed reports with exact sentence matches and their locations.
 
 ## Features
 
@@ -23,7 +23,7 @@ This tool helps organizations perform compliance checks by searching for specifi
 ### Setup
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/eo-compliance.git
+git clone https://github.com/danielmaangi/eo-compliance.git
 cd eo-compliance
 ```
 
@@ -40,10 +40,14 @@ uv add ipykernel pandas pypdf2 openpyxl python-docx
 - Supported formats: `.pdf`, `.xlsx`, `.docx`
 
 ### 2. Configure Keywords
-Open `KeyWordSearch.ipynb` and modify the keywords list:
+The tool is pre-configured with a comprehensive list of compliance-related keywords:
 ```python
-keywords = ['Gender', 'DEI', 'Diversity', 'Inclusion']  # Add more keywords as needed
+keywords = ['Gender', 'Transgender','transmen', 'transwomen' , 'LGBTQ', 'LGBT', ' DEI ', 'Diversity', 'Equity', 'Inclusion', 'gender',' GBV', 'trans-gender', 'trans-women', 'trans-men', 'disparity', 'pregnant people',
+            'Gender', 'DEI', 'Diversity', 'Inclusion', 'disparity', 'equity', 'identity', 'inclusivity', 'binary', 'non-binary', 'prejudice',
+            'pronouns', 'race', 'stereotype', 'tgw', 'transgender', 'tg', 'transgender women', 'trans', 'transgender', 'protecting women', 'key pops', 'key populations', 
+            'MAT', 'hormone', 'gbv', 'dreams', 'abortion', 'fsw', 'female sex worker', 'food']
 ```
+You can modify this list in `KeyWordSearch.ipynb` to add or remove keywords as needed for your specific compliance requirements.
 
 ### 3. Run the Analysis
 Execute the notebook cells in order:
@@ -109,10 +113,7 @@ Built-in validation checks ensure:
 ## Customization
 
 ### Adding New Keywords
-Modify the `keywords` list in the configuration section:
-```python
-keywords = ['Gender', 'DEI', 'Diversity', 'Inclusion', 'Your New Keyword']
-```
+Modify the `keywords` list in the configuration section of `KeyWordSearch.ipynb` to add or remove keywords as needed for your specific compliance requirements.
 
 ### Changing Input Folder
 Update the `folder_path` variable:
