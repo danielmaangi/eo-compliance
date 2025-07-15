@@ -15,3 +15,7 @@ CDC-RFA-GH21-2115 NOFO/
 *.csv
 *.xlsx
 *.xls
+*.xlsb
+~$*.xlsx
+~$*.xls
+~$*.xlsb
